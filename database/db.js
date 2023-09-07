@@ -7,11 +7,12 @@ const conn = mysql.createConnection({
     database : 'e-commerce'
 })
 
-conn.connect((err) => {
-    if(err){
+conn.connect((error) => {
+    if(error){
         console.log(`Database Connection Failed With Express...`)
     }
-    console.log(`Database Connection Connted With Express...`)
+
+    console.log(`Database Connection Connected With Express...`)
 })
 
 module.exports = conn
